@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('SK')
 # DEBUG = True
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = ['www.gold-trust.ru']
+ALLOWED_HOSTS = ['www.gold-trust.ru', 'gold-trust.ru']
 
 
 # Application definition
@@ -81,8 +81,11 @@ WSGI_APPLICATION = '_goldentrust.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'u1181641',
+        'USER': 'u1181641',
+        'PASSWORD': 'u1181641_gold',
+        'HOST': 'localhost',
     }
 }
 
