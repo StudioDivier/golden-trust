@@ -1,0 +1,24 @@
+@import "colors";
+@import "screen";
+
+.modal-content {
+
+  .modal-header {
+    border: none;
+  }
+
+  h5 {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  label {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .btn {
+    background-color: $gold;
+    width: 100%;
+  }
+}

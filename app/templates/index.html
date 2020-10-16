@@ -1,0 +1,713 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Gold Group</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'img/logo.png' %}" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О проекте</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#geology">Геология</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#for-investors">Инвесторам</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu-contacts" role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Контакты
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menu-contacts">
+<!--                            <a class="dropdown-item" href="#">Реквизиты</a>-->
+                            <a class="dropdown-item" href="tel:+74991301314">8 499 130 13 14</a>
+                            <a class="dropdown-item" href="mailto:info@gold-trust.ru">info@gold-trust.ru</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#simple-callback" class="btn btn-gold">Обратный звонок</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="main">
+    <div class="container">
+        <h1>Золото Перу</h1>
+        <h2>Проект Альтомаито</h2>
+        <a data-toggle="modal" data-target="#buy-stocks"  class="btn btn-gold mt-4">Оставить заявку на покупку акций</a>
+    </div>
+</section>
+
+<section class="main-cards">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="main-cards__item">
+                    <p>В 150 км по трассе от Пуэрто-Мальдонадо</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="main-cards__item">
+                    <p>3 км по грунтовой дороге</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="main-cards__item">
+                    <p>500 м до ЛЭП</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="main-cards__item">
+                    <p>Наличие инфраструктуры для горной промышленности в Пуэрто-Мальдонадо</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<a name="about"></a>
+<section class="index-block-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <img src="{% static 'img/map.png' %}" alt="map">
+            </div>
+            <div class="col-lg-4">
+                <h3>SMRL Altomayito</h3>
+                <p>выполняла поисковые работы и опытную добычу, что показало высокий потенциал участка Альтомаито.
+                    Существует возможность для увеличения лицензионной площади.</p>
+                <h3 class="mt-4">Sociedad Minera De Responsibilidad Limitada Altomayito </h3>
+                <p>владеет территорией общей площадью в 300 Га в провинции Тамбопата (900 км восточнее Лимы). Компания
+                    имеет лицензии и разрешительную документацию для добычи золота (объем переработки песков 3 000 м3 в
+                    сутки).</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="index-block-two">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h6>Местоположение</h6>
+                <h3>Проект Альтомаито</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">1 500 км по трассе на Ю-В от Лимы
+                    </li>
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Часовой перелёт из Лимы</li>
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Уникальная россыпная провинция</li>
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Развитая транспортная и
+                        энергетическая инфраструктура
+                    </li>
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Профессиональное обслуживание
+                        горной техники
+                    </li>
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Площадь лицензии 300 Га в провинции
+                        Тамбопата
+                    </li>
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Компанией получены разрешительные
+                        документы1 и лицензии на добычу золота с переработкой до 3 000 м3 песков в сутки
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center">
+                <img src="{% static 'img/map2.png' %}" alt="map2">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="index-block-three">
+    <div class="container">
+        <h6>Региональная геология</h6>
+        <h3>АЛЬТОМАИТО располагается в уникальной россыпной провинции</h3>
+        <ul class="list-group">
+            <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Россыпные месторождения формируются эрозией
+                рудных тел, расположенных в Андах, аккумулируясь в долинах рек Мадрэ дэ Диос и Инамбари
+            </li>
+            <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Мощность аллювиальных песков от 3 м до 15 м
+                и более, со средним содержанием до 6 г/м3
+            </li>
+        </ul>
+        <img src="{% static 'img/map3.png' %}" alt="map3">
+    </div>
+</section>
+<a name="geology"></a>
+<section class="index-block-four">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <h6>Геология Альтомаито</h6>
+                <h3>Литологическая колонка</h3>
+                <ul>
+                    <li>Участок 300 Га в Перуанской сельве</li>
+                    <li>Мощность вскрышных пород <3 м</li>
+                    <li>Средняя мощность золотосодержащих песков от 3 м</li>
+                    <li>Содержание золота >0.5 г/м3 (оценка содержания по опытной добыче)</li>
+                    <li>Прогнозные ресурсы 100 000 унций</li>
+                </ul>
+            </div>
+            <div class="col-lg-7">
+                <div class="geo-images">
+                    <img src="{% static 'img/grunt0.png' %}" alt="grunt">
+                    <img src="{% static 'img/grunt1.png' %}" alt="grunt">
+                </div>
+            </div>
+        </div>
+        <div class="download-docs">
+            <a data-toggle="modal" data-target="#download-documents" class="btn">Получить документы по экспертизе</a>
+        </div>
+    </div>
+</section>
+
+<section class="index-block-five">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <h6>Геология</h6>
+                <h3>Крупность золота</h3>
+                <img src="{% static 'img/table.png' %}" alt="table">
+            </div>
+            <div class="col-lg-7">
+                <div class="gold-images">
+                    <div class="gold-images__item">
+                        <img src="{% static 'img/gold1.png' %}" alt="gold">
+                        <p>-0,5 +0,25 mm</p>
+                    </div>
+                    <div class="gold-images__item">
+                        <img src="{% static 'img/gold2.png' %}" alt="gold">
+                        <p>-0,25 +0,210 mm</p>
+                    </div>
+                    <div class="gold-images__item">
+                        <img src="{% static 'img/gold3.png' %}" alt="gold">
+                        <p>-10 mm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="index-block-six">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 d-flex flex-column justify-content-center">
+                <h6>Потенциал</h6>
+                <h3>Сравнение с изученным аналогичным проектом</h3>
+                <p>Потенциал участка является недооцененным в виду малой изученности. По прогнозным оценкам возможно
+                    значительное увеличение ресурсной базы.</p>
+                <h5>Предварительная оценка участка Альтомаито – 300 га.</h5>
+                <ul class="list-group">
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">100 000 унций Au (3,1 тонны)</li>
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Содержание Au >0,5 г/м3</li>
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Изучены только 3 метра в глубину</li>
+                </ul>
+                <h5>Участок Карабайа- 500 га.</h5>
+                <ul class="list-group">
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">2 миллиона унций Au (67 тонн)</li>
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Среднее содержание 2,1-3,15 г/м3</li>
+                    <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">6-7 м в глубину</li>
+                </ul>
+            </div>
+            <div class="col-lg-7">
+                <img src="{% static 'img/map4.png' %}" alt="map4">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="index-block-seven">
+    <div class="container">
+        <h6>Практика</h6>
+        <h3>Опытная добыча</h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'img/exp1.png' %}" alt="experience">
+            </div>
+            <div class="col-sm-6">
+                <img src="{% static 'img/exp2.png' %}" alt="experience">
+            </div>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Опытная примитивная добыча кустарным способом подтвердила высокие содержания золота (выше чем 0,5 г/м3 из расчета добытого металла)</li>
+            <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">Изученные пробы показали промышленное содержание золота и возможность шлюзового обогащения</li>
+            <li class="list-group-item"><img src="{% static 'img/check.png' %}" alt="check">По данным геолого-разведочной экспертизы предложено 3 схемы обогащения с извлечением от 63,4% до 76,6%</li>
+        </ul>
+    </div>
+</section>
+<a name="for-investors"></a>
+<section class="index-block-eight">
+    <div class="container">
+        <h3>Экономика</h3>
+        <table class="table table-striped">
+            <tbody>
+            <tr>
+                <td>Содержание золота</td>
+                <td>500 мг/м3</td>
+                <td>500 мг/м3</td>
+            </tr>
+            <tr>
+                <td>Извлечение</td>
+                <td>65%</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>Производство кг/год</td>
+                <td>281</td>
+                <td>216</td>
+            </tr>
+            <tr>
+                <td>Производство унц/год</td>
+                <td>9 029</td>
+                <td>6 945</td>
+            </tr>
+            <tr>
+                <td>Выручка USD</td>
+                <td>16 252 090</td>
+                <td>12 501 608</td>
+            </tr>
+            <tr>
+                <td>Затраты USD</td>
+                <td>4 029 734</td>
+                <td>4 029 734</td>
+            </tr>
+            <tr>
+                <td>EBIT USD</td>
+                <td>12 222 356</td>
+                <td>8 471 873</td>
+            </tr>
+            <tr>
+                <td>Налог на прибыль USD, 19%</td>
+                <td>2 322 248</td>
+                <td>1 609 656</td>
+            </tr>
+            <tr>
+                <td>Чистая прибыль USD</td>
+                <td>9 900 108</td>
+                <td>6 852 217</td>
+            </tr>
+            <tr>
+                <td>Себестоимость USD/унция</td>
+                <td>446</td>
+                <td>580</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>Производственные мощности – 3 000 м3/сутки. Рабочий год - 300 дней; показатели рассчитаны при цене унции золота – 1 800 USD.</p>
+    </div>
+</section>
+
+<section class="index-block-nine">
+    <div class="container">
+        <h3>График чувствительности</h3>
+        <div class="nine__graphs">
+            <img src="{% static 'img/graph.png' %}" alt="graph">
+            <img src="{% static 'img/graph1.png' %}" alt="graph">
+        </div>
+    </div>
+</section>
+
+<section class="index-block-ten">
+    <div class="container">
+        <h3>Резюме проекта</h3>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Параметры проекта</th>
+                <th>Ед.</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Годовой объем переработки</td>
+                <td>м3/год</td>
+                <td>900 000</td>
+            </tr>
+            <tr>
+                <td>Срок отработки</td>
+                <td>месяц</td>
+                <td>84</td>
+            </tr>
+            <tr>
+                <td>NPV (10%)</td>
+                <td>M$</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>IRR</td>
+                <td>%</td>
+                <td>495,65</td>
+            </tr>
+            <tr>
+                <td>Срок окупаемости</td>
+                <td>месяц</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Средняя цена золота</td>
+                <td>$/унц.</td>
+                <td>1 800</td>
+            </tr>
+            <tr>
+                <td>Free cashflow (до налогооблажения)</td>
+                <td>M$</td>
+                <td>81,8</td>
+            </tr>
+            <tr>
+                <td>Требуемый объем капитала</td>
+                <td>M$</td>
+                <td>2,9</td>
+            </tr>
+            <tr>
+                <td>Добытое золото</td>
+                <td>унц.</td>
+                <td>64 331</td>
+            </tr>
+            <tr>
+                <td>Себестоимость</td>
+                <td>$/унц.</td>
+                <td>446</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="callback-form">
+    <div class="container">
+        <div class="form-block">
+            <h3>Оставьте заявку и мы с вами свяжемся</h3>
+            <form class="needs-validation" novalidate method="post" action="#">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+<!--                    <input type="text" name="name" class="form-control" id="name" placeholder="Введите имя*" required>-->
+                    {% csrf_token %}
+                    {{ form_footer.name }}
+                    <div class="invalid-feedback">
+                        Введите пожалуйста имя
+                    </div>
+                    <div class="valid-feedback">
+                        Тут все хорошо
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Телефон</label>
+<!--                    <input type="text" name="tel" class="form-control" id="tel" placeholder="Введите телефон*" required>-->
+                        {% csrf_token %}
+                        {{ form_footer.phone }}
+                    <div class="invalid-feedback">
+                        Введите пожалуйста телефон
+                    </div>
+                    <div class="valid-feedback">
+                        Тут все хорошо
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+<!--                    <input type="text" name="email" class="form-control" id="email" placeholder="Введите email" required>-->
+                        {% csrf_token %}
+                        {{ form_footer.email }}
+                    <div class="invalid-feedback">
+                        Введите пожалуйста email
+                    </div>
+                    <div class="valid-feedback">
+                        Тут все хорошо
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Согласен на обработку персональных данных
+                        </label>
+                        <div class="invalid-feedback">
+                            Перед отправкой формы необходимо принять согласие на обработку данных
+                        </div>
+                    </div>
+                </div>
+                <button class="btn" type="submit" value="submit">отправить</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <a href="/" class="footer-logo">Altomayito</a>
+                <p>172 Ca.Comandante O’Donovan Miraflores Lima, Peru</p>
+                <a data-toggle="modal" data-target="#simple-callback"  class="btn">Обратный звонок</a>
+            </div>
+            <div class="col-lg-4">
+                <nav>
+                    <ul>
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">О проекте</a></li>
+                        <li><a href="">Геология</a></li>
+                        <li><a href="">Инвесторам</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-4">
+                <h5>Контакты в Москве</h5>
+                <p>г. Москва, ул. Золотая д. 11, 7 этаж офис 7б 18</p>
+                <p>тел: 8 (499) 130 13 14</p>
+                <p>email: info@altomayito.ru</p>
+            </div>
+        </div>
+        <hr>
+        <p>© 2020 “Altomayito“ - золотодобывающая компания</p>
+    </div>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="simple-callback" tabindex="-1" aria-labelledby="simple-callbackLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="simple-callbackLabel">Оставьте заявку и мы с вами свяжемся</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="needs-validation" novalidate method="post" action="#">
+                    <div class="form-group">
+                        <label for="name-modal1">Имя</label>
+<!--                        <input type="text" name="name-modal1" class="form-control" id="name-modal1" placeholder="Введите имя*" required>-->
+                        {% csrf_token %}
+                        {{ form_call.name }}
+                        <div class="invalid-feedback">
+                            Введите пожалуйста имя
+                        </div>
+                        <div class="valid-feedback">
+                            Тут все хорошо
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel-modal1">Телефон</label>
+<!--                        <input type="text" name="tel-modal1" class="form-control" id="tel-modal1" placeholder="Введите телефон*" required>-->
+                        {% csrf_token %}
+                        {{ form_call.phone }}
+                        <div class="invalid-feedback">
+                            Введите пожалуйста телефон
+                        </div>
+                        <div class="valid-feedback">
+                            Тут все хорошо
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck1" required>
+                            <label class="form-check-label" for="invalidCheck1">
+                                Согласен на обработку персональных данных
+                            </label>
+                            <div class="invalid-feedback">
+                                Перед отправкой формы необходимо принять согласие на обработку данных
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" type="submit" value="Submit">отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="download-documents" tabindex="-1" aria-labelledby="download-documentsLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="download-documentsLabel">Оставьте заявку и мы с вами свяжемся</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="needs-validation" novalidate method="post" action="#">
+                    <div class="form-group">
+                        <label for="name-modal2">Имя</label>
+<!--                        <input type="text" name="name-modal2" class="form-control" id="name-modal2" placeholder="Введите имя*" required>-->
+                        {% csrf_token %}
+                        {{ form_down.name }}
+                        <div class="invalid-feedback">
+                            Введите пожалуйста имя
+                        </div>
+                        <div class="valid-feedback">
+                            Тут все хорошо
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel-modal2">Телефон</label>
+<!--                        <input type="text" name="tel-modal2" class="form-control" id="tel-modal2" placeholder="Введите телефон*" required>-->
+                        {% csrf_token %}
+                        {{ form_down.name }}
+                        <div class="invalid-feedback">
+                            Введите пожалуйста телефон
+                        </div>
+                        <div class="valid-feedback">
+                            Тут все хорошо
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-modal2">Email</label>
+<!--                        <input type="text" name="email-modal2" class="form-control" id="email-modal2" placeholder="Введите email" required>-->
+                        {% csrf_token %}
+                        {{ form_down.name }}
+                        <div class="invalid-feedback">
+                            Введите пожалуйста email
+                        </div>
+                        <div class="valid-feedback">
+                            Тут все хорошо
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Согласен на обработку персональных данных
+                            </label>
+                            <div class="invalid-feedback">
+                                Перед отправкой формы необходимо принять согласие на обработку данных
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" type="submit">отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="buy-stocks" tabindex="-1" aria-labelledby="buy-stocksLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="buy-stocksLabel">Оставьте заявку и мы с вами свяжемся</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="needs-validation" novalidate method="post" action="#">
+                    <div class="form-group">
+                        <label for="name-modal3">Имя</label>
+<!--                        <input type="text" name="name-modal3" class="form-control" id="name-modal3" placeholder="Введите имя*" required>-->
+                        {% csrf_token %}
+                        {{ form_buy.name }}
+                        <div class="invalid-feedback">
+                            Введите пожалуйста имя
+                        </div>
+                        <div class="valid-feedback">
+                            Тут все хорошо
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel-modal3">Телефон</label>
+<!--                        <input type="text" name="tel-modal3" class="form-control" id="tel-modal3" placeholder="Введите телефон*" required>-->
+                        {% csrf_token %}
+                        {{ form_buy.phone }}
+                        <div class="invalid-feedback">
+                            Введите пожалуйста телефон
+                        </div>
+                        <div class="valid-feedback">
+                            Тут все хорошо
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-modal3">Email</label>
+<!--                        <input type="text" name="email-modal3" class="form-control" id="email-modal3" placeholder="Введите email" required>-->
+                        {% csrf_token %}
+                        {{ form_buy.email }}
+                        <div class="invalid-feedback">
+                            Введите пожалуйста email
+                        </div>
+                        <div class="valid-feedback">
+                            Тут все хорошо
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                            <label class="form-check-label" for="invalidCheck3">
+                                Согласен на обработку персональных данных
+                            </label>
+                            <div class="invalid-feedback">
+                                Перед отправкой формы необходимо принять согласие на обработку данных
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" type="submit" value="Submit">отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+</body>
+</html>

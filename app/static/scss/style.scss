@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
+@import "colors";
+
+* {
+  font-family: 'Roboto', sans-serif;
+
+  &::selection {
+    color: $brown;
+    background-color: $gold;
+  }
+}
+
+.btn {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 0;
+  padding: 15px 25px;
+  border: none;
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  &:hover {
+    border: none;
+  }
+}
+
+.btn-gold {
+  background-color: $gold;
+  color: $dark;
+
+  &:hover {
+    color: white;
+  }
+}
+
+@import "header";
+@import "modal";
+@import "main/main";
+@import "footer";
+@import "callback-form";

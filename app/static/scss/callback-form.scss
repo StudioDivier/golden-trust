@@ -1,0 +1,52 @@
+@import "colors";
+@import "screen";
+
+.callback-form {
+  margin-top: 85px;
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-block {
+    background-color: $gold;
+    @include lg-min {
+      padding: 55px 85px;
+    }
+    @include lg-max {
+      padding: 25px 35px;
+    }
+  }
+
+  h3 {
+    margin-bottom: 25px;
+    color: $dark;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  form {
+    width: 100%;
+    max-width: 650px;
+
+
+    label {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $dark;
+    }
+
+    .btn {
+      background-color: $light;
+      width: 100%;
+      &:hover {
+        background-color: $brown;
+        color: $light;
+      }
+    }
+  }
+}

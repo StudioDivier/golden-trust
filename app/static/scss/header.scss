@@ -1,0 +1,35 @@
+@import "colors";
+@import "screen";
+
+
+header {
+  img {
+    @include xl-max {
+      max-width: 200px;
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+
+        a {
+          @include xl-max {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .btn {
+    @include lg-min {
+      margin-left: 25px;
+    }
+    @include lg-max {
+      margin-top: 25px;
+    }
+  }
+}
