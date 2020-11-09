@@ -8,4 +8,6 @@ app_name = 'index'
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('thanks', views.thank, name='thank'),
+    path('privacy', views.privacy, name='privacy'),
     ]

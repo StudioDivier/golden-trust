@@ -1,0 +1,109 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Gold Group</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'img/logo.png' %}" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О проекте</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#geology">Геология</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#for-investors">Инвесторам</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu-contacts" role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Контакты
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menu-contacts">
+<!--                            <a class="dropdown-item" href="#">Реквизиты</a>-->
+                            <a class="dropdown-item" href="tel:+74991301314">8 499 130 13 14</a>
+                            <a class="dropdown-item" href="mailto:info@gold-trust.ru">info@gold-trust.ru</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#simple-callback" class="btn btn-gold">Обратный звонок</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="thanks-cont">
+    <div class="container">
+        <div class="h-main">
+            <h1>Спасибо</h1>
+        </div>
+        <div class="accepted">
+            <h2>Ваша заявка принята</h2>
+            <h2>В ближайшее время с Вами</h2>
+            <h2>свяжется наш менеджер</h2>
+        </div>
+
+        <a data-toggle="modal" data-target="#buy-stocks"  class="btn btn-gold mt-4 thx">На главную</a>
+    </div>
+</section>
+
+
+<footer style="margin-top: 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <a href="/" class="footer-logo">Altomayito</a>
+                <p>172 Ca.Comandante O’Donovan Miraflores Lima, Peru</p>
+                <a data-toggle="modal" data-target="#simple-callback"  class="btn">Обратный звонок</a>
+            </div>
+            <div class="col-lg-4">
+                <nav>
+                    <ul>
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">О проекте</a></li>
+                        <li><a href="">Геология</a></li>
+                        <li><a href="">Инвесторам</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-4">
+                <h5>Контакты в Москве</h5>
+                <p>г. Москва, ул. Золотая д. 11, 7 этаж офис 7б 18</p>
+                <p>тел: 8 (499) 130 13 14</p>
+                <p>email: info@altomayito.ru</p>
+            </div>
+        </div>
+        <hr>
+        <p>© 2020 “Altomayito“ - золотодобывающая компания</p>
+    </div>
+</footer>
+</body>
+</html>

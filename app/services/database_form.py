@@ -1,21 +1,37 @@
-from ..models import CallBack
+from ..models import CallBack, BuyFeed, DownFeed, FooterFeed
 
 
-def add_feed_to_db(name: str, phone: str, cat_form: str):
-    """
-    Функция добавления записи из формы в БД
-    :param name: имя польлзователя
-    :param email: почта заявителя
-    :param form: название или нахождение формы
-    :return: True
-    """
+def callback_add(**kwargs):
     try:
-        feed = CallBack()
-        feed.name = name
-        feed.telephone = phone
-        feed.cat_form = cat_form
-        feed.save()
+        data = CallBack(kwargs)
+        data.save()
         return True
+    except Exception:
+        return False
 
-    except BaseException:
+
+def buyfeed(**kwargs):
+    try:
+        data = BuyFeed(kwargs)
+        data.save()
+        return True
+    except Exception:
+        return False
+
+
+def downfeed(**kwargs):
+    try:
+        data = DownFeed(kwargs)
+        data.save()
+        return True
+    except Exception:
+        return False
+
+
+def footerfeed(**kwargs):
+    try:
+        data = FooterFeed(kwargs)
+        data.save()
+        return True
+    except Exception:
         return False

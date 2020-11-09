@@ -73,7 +73,7 @@ header nav ul li {
 }
 
 .main {
-  background-image: url(../img/bg-main.png);
+  background-image: url(../../img/bg-main.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -236,7 +236,7 @@ header nav ul li {
   margin-bottom: 25px;
 }
 .index-block-four ul {
-  list-style: url(../img/li-dot.png);
+  list-style: url("../../img/li-dot.png");
   padding-left: 25px;
 }
 .index-block-four ul li {
@@ -496,4 +496,61 @@ footer h5 {
 .callback-form form .btn:hover {
   background-color: #462318;
   color: #ffffff;
+}
+
+.thanks-cont {
+  background-image: url(../img/bg-main.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thanks-cont .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+.thanks-cont .container .accepted {
+  background: white;
+  padding: 15px;
+}
+.thanks-cont .container .accepted h2 {
+  font-weight: 600;
+}
+.thanks-cont .container .thx {
+  padding: 10px 150px;
+}
+.thanks-cont h1 {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 90px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .thanks-cont h1 {
+    font-size: 50px;
+  }
+}
+.thanks-cont h2 {
+  text-transform: uppercase;
+  color: #462318;
+  background-color: #ffffff;
+  letter-spacing: 1.8px;
+  padding: 4px 15px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .thanks-cont h2 {
+    font-size: 25px;
+  }
+}
+.thanks-cont a {
+  font-size: 20px;
 }

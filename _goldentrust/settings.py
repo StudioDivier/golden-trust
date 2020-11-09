@@ -22,13 +22,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SK')
+SECRET_KEY = 'koavo-8@tvubhyp6cq=o3+e=1*7ql9hs$o@l#7elpcfh7t0!yw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
+DEBUG = bool( os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = ['www.gold-trust.ru', 'gold-trust.ru']
+ALLOWED_HOSTS = ['www.gold-trust.ru', 'gold-trust.ru', '127.0.0.1']
 
 
 # Application definition
@@ -81,11 +81,11 @@ WSGI_APPLICATION = '_goldentrust.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'u1181641',
-        'USER': 'u1181641',
-        'PASSWORD': 'u1181641_gold',
-        'HOST': 'localhost',
+        # 'USER': 'u1181641',
+        # 'PASSWORD': 'u1181641_gold',
+        # 'HOST': 'localhost',
     }
 }
 
@@ -138,5 +138,5 @@ EMAIL_USE_TLS = True
 EMAIL_HOST = 'mail.hosting.reg.ru'
 EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'request@gold-trust.ru'
-EMAIL_HOST_PASSWORD = os.getenv('PWD')
+EMAIL_HOST_PASSWORD = 'Gfhjkm1234'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
